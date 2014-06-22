@@ -10,9 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-
 Plugin 'scrooloose/nerdtree'
-Plugin 'sickill/vim-monokai'
+Plugin 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,15 +29,17 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 set t_Co=256
 
 "undo stuff
 set undodir=~/.vim/undo
 set undofile
 
-syntax on "sytax highlighting
-colorscheme monokai
+
+syntax enable
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 "formatting
 set expandtab
@@ -59,6 +61,8 @@ set showmatch
 nnoremap <leader>ss :source $MYVIMRC<cr>
 nnoremap <leader>ee :tabe $MYVIMRC<cr>
 nnoremap <leader><space> :noh<cr>
+
+nnoremap <leader>nt :NERDTreeToggle<cr>
 
 nnoremap <leader><cr> :tabe<cr>
 nnoremap <leader>[ :tabp<cr>

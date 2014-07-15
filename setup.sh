@@ -25,7 +25,7 @@ if [ -d $HOME/.vim ]
 fi
 
 echo "linking new .vimrc"
-ln -s `pwd`/.vimrc ~/.vimrc
+ln -s `pwd`/vimrc ~/.vimrc
 
 echo "linking new .vim"
-ln -s `pwd`/.vim ~/.vim
+ln -s `pwd`/vim ~/.vim

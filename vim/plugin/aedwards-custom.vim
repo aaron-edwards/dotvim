@@ -10,6 +10,8 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+au FileType javascript call JavaScriptFold()
+
 "formatting
 set expandtab
 set tabstop=2

@@ -10,8 +10,6 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
-au FileType javascript call JavaScriptFold()
-
 "formatting
 set expandtab
 set tabstop=2
@@ -43,3 +41,10 @@ nnoremap <leader>] :tabn<cr>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap <F1> <ESC>
+
+" or
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>

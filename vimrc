@@ -18,6 +18,11 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'sickill/vim-monokai'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'einars/js-beautify'
+NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'tfnico/vim-gradle'
 
 call neobundle#end()
 

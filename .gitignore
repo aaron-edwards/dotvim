@@ -1,1 +1,5 @@
-.vim/undo/
+vim/undo/
+vim/bundle/
+vim/.netrwhist
+
+*.swp

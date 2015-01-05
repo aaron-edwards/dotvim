@@ -14,15 +14,23 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'sickill/vim-monokai'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'einars/js-beautify'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'tfnico/vim-gradle'
+
+NeoBundle 'guns/vim-clojure-static'
+NeoBundle 'guns/vim-clojure-highlight'
+NeoBundle 'tpope/vim-fireplace'
+
+NeoBundle 'amdt/vim-niji'
+
+NeoBundle 'Shougo/unite.vim'
 
 call neobundle#end()
 
